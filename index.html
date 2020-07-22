@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title>Smart TV LED Samsung</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,45 +17,112 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/gallery.theme.css">
+  <link rel="stylesheet" href="css/gallery.min.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./src/js/script.js"></script>
 
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-light bg-light static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <a class="btn btn-primary" href="#">Sign In</a>
-    </div>
-  </nav>
-
   <!-- Masthead -->
-  <header class="masthead text-white text-center">
+  <header class="slider">
     <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
+    <div class="gallery autoplay items-4">
+      <div id="item-1" class="control-operator">
+
+      </div>
+
+      <div id="item-2" class="control-operator">
+
+      </div>
+
+      <div id="item-3" class="control-operator">
+
+      </div>
+
+      <div id="item-4" class="control-operator">
+
+      </div>
+
+      <figure class="item">
+        <h1><img src="img/slider/amostra-1.webp"></h1>
+      </figure>
+
+      <figure class="item">
+        <h1><img src="img/slider/amostra-2.webp"></h1>
+      </figure>
+
+      <figure class="item">
+        <h1><img src="img/slider/amostra-3.jpg"></h1>
+      </figure>
+
+      <figure class="item">
+        <h1><img src="img/slider/amostra-4.webp"></h1>
+      </figure>
+
+      <div class="controls">
+        <a href="#item-1" class="control-button"><i class="fas fa-circle"></i></a>
+        <a href="#item-2" class="control-button"><i class="fas fa-circle"></i></a>
+        <a href="#item-3" class="control-button"><i class="fas fa-circle"></i></a>
+        <a href="#item-4" class="control-button"><i class="fas fa-circle"></i></a>
       </div>
     </div>
   </header>
+
+  <!-- Image Showcases -->
+  <section class="showcase">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/amostra-1.webp');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Mais velocidade, melhor desempenho</h2>
+          <p class="lead mb-0">O poderoso Processador Quad Core acelera a sua Smart TV da Samsung para que esta reaja aos comandos e execução de aplicações de forma imediata!</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/amostra-3.webp');"></div>
+        <div class="col-lg-6 my-auto showcase-text">
+          <h2>Mergulhe no seu conteúdo de vídeo</h2>
+          <p class="lead mb-0">O Motion Rate 120 oferece uma visualização imersiva com conteúdo de vídeo sem interferências. A incrível velocidade de actualização e tecnologia de luz de fundo mantê-lo-ão no seu lugar com uma imagem de vídeo rápida e perfeita!</p>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/amostra-4.webp');"></div>
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+          <h2>Divirta-se com a sua televisão</h2>
+          <p class="lead mb-0">Usando a função ConnectShare, pode assistir a uma grande variedade de conteúdos através de um simples passo. Basta ligar o cabo USB ou HDD na TV e pode começar a desfrutar dos seus filmes, música e fotos no grande ecrã.
+            * Os formatos suportado!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Desfrute de cores mais precisas e naturais.</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">      
+            <div class="form-row">
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Cadastre seu email para receber nossos anúncios">
+              </div>
+              <div class="col-12 col-md-3">
+                <button type="submit" class="btn btn-block btn-lg btn-primary" id="btnCadastrar" onclick="recebeEmail()">Cadastrar</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Icons Grid -->
   <section class="features-icons bg-light text-center">
@@ -63,11 +130,11 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
+            <div class="features-icons-icon d-flex"> 
+               <i class="icon-screen-desktop m-auto text-primary"></i>
             </div>
-            <h3>Fully Responsive</h3>
-            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+            <h3>Resolução Full HD</h3>
+            <p class="lead mb-0">Os seus programas de TV e filmes preferidos estão cada vez mais realistas. Resolução Full HD intensa e vibrante com o dobro da resolução da TV HD!</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -75,100 +142,18 @@
             <div class="features-icons-icon d-flex">
               <i class="icon-layers m-auto text-primary"></i>
             </div>
-            <h3>Bootstrap 4 Ready</h3>
-            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+            <h3>Ultra Clean View</h3>
+            <p class="lead mb-0">Analisando o conteúdo original com um algoritmo avançado, a Ultra Clean View oferece imagens de maior qualidade com menos distorção. Aprecie a imagem clara!</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="features-icons-item mx-auto mb-0 mb-lg-3">
             <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
+              <i class="fas fa-palette  m-auto text-primary"></i>
             </div>
-            <h3>Easy to Use</h3>
-            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+            <h3>PurColour</h3>
+            <p class="lead mb-0">Veja o seu conteúdo favorito com cores naturais que fornecem detalhes tão nítidos quanto a realidade. Obtenha uma experiência de visualização mais colorida!</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Image Showcases -->
-  <section class="showcase">
-    <div class="container-fluid p-0">
-      <div class="row no-gutters">
-
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-        <div class="col-lg-6 my-auto showcase-text">
-          <h2>Updated For Bootstrap 4</h2>
-          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
-        </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="testimonials text-center bg-light">
-    <div class="container">
-      <h2 class="mb-5">What people are saying...</h2>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-            <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-            <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-            <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="call-to-action text-white text-center">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
@@ -181,22 +166,22 @@
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a href="#">About</a>
+              <a href="#">Sobre</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Contact</a>
+              <a href="#">Contato</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
+              <a href="#">Termos de uso</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a href="#">Política de privacidade</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Seu Website 2020. Todos os direitos reservados.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
